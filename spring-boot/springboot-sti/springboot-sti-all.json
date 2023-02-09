@@ -1,13 +1,13 @@
 {
    "kind": "List",
-   "apiVersion": "v1",
+   "apiVersion": "build.openshift.io/v1",
    "metadata": {
       "name": "springboot-sti"
    },
    "items": [
       {
          "kind": "BuildConfig",
-         "apiVersion": "v1",
+         "apiVersion": "build.openshift.io/v1",
          "metadata": {
             "name": "springboot-sti"
          },
@@ -33,7 +33,7 @@
             "source": {
                "type": "Git",
                "git": {
-                  "uri": "https://github.com/jorgemoralespou/osev3-examples.git",
+                  "uri": "https://github.com/harinirahul24/osev3-examples.git",
                   "ref": "master"
                },
                "contextDir": "spring-boot/springboot-sti"
@@ -58,7 +58,7 @@
       },
       {
          "kind": "ImageStream",
-         "apiVersion": "v1",
+         "apiVersion": "build.openshift.io/v1",
          "metadata": {
             "name": "centos"
          },
@@ -68,7 +68,7 @@
       },
       {
          "kind": "ImageStream",
-         "apiVersion": "v1",
+         "apiVersion": "build.openshift.io/v1",
          "metadata": {
             "name": "springboot-sti"
          },
@@ -90,7 +90,7 @@
       },
       {
          "kind": "Template",
-         "apiVersion": "v1",
+         "apiVersion": "build.openshift.io/v1",
          "metadata": {
             "name": "springboot-helloworld-maven",
             "annotations": {
@@ -152,7 +152,7 @@
          "objects": [
             {
                "kind": "BuildConfig",
-               "apiVersion": "v1",
+               "apiVersion": "build.openshift.io/v1",
                "metadata": {
                   "name": "${APPLICATION_NAME}"
                },
@@ -203,7 +203,7 @@
             },
             {
                "kind": "ImageStream",
-               "apiVersion": "v1",
+               "apiVersion": "build.openshift.io/v1",
                "metadata": {
                   "name": "${APPLICATION_NAME}"
                },
@@ -218,7 +218,7 @@
             },
             {
                "kind": "DeploymentConfig",
-               "apiVersion": "v1",
+               "apiVersion": "build.openshift.io/v1",
                "metadata": {
                   "name": "${APPLICATION_NAME}"
                },
@@ -295,7 +295,7 @@
             },
             {
                "kind": "Route",
-               "apiVersion": "v1",
+               "apiVersion": "build.openshift.io/v1",
                "metadata": {
                   "name": "${APPLICATION_NAME}"
                },
@@ -309,7 +309,7 @@
             },
             {
                "kind": "Service",
-               "apiVersion": "v1",
+               "apiVersion": "build.openshift.io/v1",
                "metadata": {
                   "name": "${APPLICATION_NAME}"
                },
@@ -332,7 +332,7 @@
       },
       {
          "kind": "Template",
-         "apiVersion": "v1",
+         "apiVersion": "build.openshift.io/v1",
          "metadata": {
             "name": "springboot-helloworld-gradle",
             "annotations": {
@@ -390,7 +390,7 @@
          "objects": [
             {
                "kind": "BuildConfig",
-               "apiVersion": "v1",
+               "apiVersion": "build.openshift.io/v1",
                "metadata": {
                   "name": "${APPLICATION_NAME}"
                },
@@ -441,7 +441,7 @@
             },
             {
                "kind": "ImageStream",
-               "apiVersion": "v1",
+               "apiVersion": "build.openshift.io/v1",
                "metadata": {
                   "name": "${APPLICATION_NAME}"
                },
@@ -456,7 +456,7 @@
             },
             {
                "kind": "DeploymentConfig",
-               "apiVersion": "v1",
+               "apiVersion": "build.openshift.io/v1",
                "metadata": {
                   "name": "${APPLICATION_NAME}"
                },
@@ -533,7 +533,7 @@
             },
             {
                "kind": "Route",
-               "apiVersion": "v1",
+               "apiVersion": "build.openshift.io/v1",
                "metadata": {
                   "name": "${APPLICATION_NAME}"
                },
@@ -547,7 +547,7 @@
             },
             {
                "kind": "Service",
-               "apiVersion": "v1",
+               "apiVersion": "build.openshift.io/v1",
                "metadata": {
                   "name": "${APPLICATION_NAME}"
                },
