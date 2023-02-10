@@ -2,7 +2,7 @@
    "kind": "Template",
    "apiVersion": "v1",
    "metadata": {
-      "name": "springboot-sample-microservices",
+      "name": "springboot-sti",
       "annotations": {
          "description": "Sample Microservice Spring Boot application. There is 2 applications",
          "iconClass": "icon-jboss",
