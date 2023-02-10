@@ -1,5 +1,5 @@
 {
-   "kind": "List",
+   "kind": "BuildConfig",
    "apiVersion": "build.openshift.io/v1",
    "metadata": {
       "name": "springboot-sti"
