@@ -90,7 +90,7 @@
       },
       {
          "kind": "Template",
-         "apiVersion": "v1",
+         "apiVersion": "build.openshift.io/v1",
          "metadata": {
             "name": "springboot-helloworld-maven",
             "annotations": {
